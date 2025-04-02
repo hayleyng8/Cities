@@ -19,5 +19,12 @@ public class Cities
         
         System.out.println(capCities);
         System.out.println(capCities.get("New Zealand"));
+        
+        // Remove keys
+        capCities.remove("USA");
+        System.out.println(capCities);
+        
+        // Check the Size
+        System.out.println(capCities.size());
     }
 }
