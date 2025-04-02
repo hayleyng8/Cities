@@ -26,5 +26,25 @@ public class Cities
         
         // Check the Size
         System.out.println(capCities.size());
+        
+        //Print all Keys
+        for(String i : capCities.keySet()){
+            System.out.println(i);
+        }
+        
+        // Print all the values
+        for(String i : capCities.values()){
+            System.out.println(i);
+        }
+        
+        // Loop through hashmap and print all countries that contains a 
+        for (String i : capCities.keySet()){
+            //Print keys and values
+            System.out.println("Key: " + i + " Value: " + capCities.get(i));
+            if (i.toLowerCase().contains("a")){
+                System.out.println("Countries with A");
+                System.out.println("Country: " + i + "Capital: " + capCities.get(i));
+            }
+        }
     }
 }
